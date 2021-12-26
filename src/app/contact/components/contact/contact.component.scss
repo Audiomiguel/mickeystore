@@ -13,17 +13,52 @@ p {
     width: 80%;
 }
 
-blockquote {
-    margin: 10px 30px;
-    padding: 20px 10px;
-    background: #ffffff;
-    border: 1px solid #000000;
-    color: #000000;
-    border-left-width: 10px;
-}
-
 q {
     font-style: italic;
     line-height: 1.5;
     margin: 0;
+}
+
+@media (min-width: 760px) {
+    /*mat-card {
+        width: 320px;
+        height: 100%;
+    }
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }*/
+    .contact-container {
+        display: grid;
+        grid-template:  "autor angular" 
+                        "estilos angular"
+                        "frase frase";
+        grid-template-columns: 1fr 1fr;
+        //grid-template-rows: 100px 1fr ;
+        //text-align: left;
+        //padding: 15px 20px;
+    }
+    #autor-card {
+        grid-area: autor;
+    }
+    
+    #angular-card {
+        grid-area: angular;
+    }
+    
+    #estilos-card {
+        grid-area: estilos;
+    }
+    
+    #frase-card {
+        grid-area: frase;
+        text-align: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .image-container img{
+        max-width: 300px;
+    }
 }

@@ -1,72 +1,84 @@
-<mat-card class="example-card">
-    <mat-card-header>
-        <mat-card-title>Hola, Soy Miguel Bustillos</mat-card-title>
-        <mat-card-subtitle>Autor</mat-card-subtitle>
-    </mat-card-header>
-    <div class="image-container">
-        <img mat-card-image src="http://pm1.narvii.com/6535/87868409381cd088f5230359065dc5b745cff674_00.jpg"
-            alt="audiomiguel">
-    </div>
+<div class="contact-container">
 
-    <mat-card-content>
-        <p>
-            Soy un estudiante de 8to ciclo de la carrera de Ingeniería de Software
-            apasionado por el desarrollo web y móvil, este proyecto
-            ha sido elaborado con fines demostrativos sobre el uso del framework Angular
-        </p>
-    </mat-card-content>
-    <mat-card-actions>
-        <a href="https://github.com/Audiomiguel" target="_blank" mat-button>GITHUB
-            REPOSITORY</a>
-        <a href="https://www.linkedin.com/in/miguel-bustillos-alayo-6ab081222/" target="_blank" mat-button>LINKEDIN</a>
-    </mat-card-actions>
-</mat-card>
+    <mat-card class="example-card" id="autor-card">
+        <mat-card-header>
+            <mat-card-title>Hola, Soy Miguel Bustillos</mat-card-title>
+            <mat-card-subtitle>Autor</mat-card-subtitle>
+        </mat-card-header>
+        <div class="image-container">
+            <img mat-card-image src="http://pm1.narvii.com/6535/87868409381cd088f5230359065dc5b745cff674_00.jpg"
+                alt="audiomiguel">
+        </div>
 
-<mat-card class="example-card">
-    <mat-card-title-group>
-        <mat-card-title>Acerca del proyecto</mat-card-title>
-        <mat-card-subtitle>Angular</mat-card-subtitle>
-        <img mat-card-sm-image src="assets/images/angular-icon.png">
-    </mat-card-title-group>
-    <mat-card-content>
-        <p>
-            Se ha utilizado la comunicación entre componentes padre a hijo y viceversa (Input & Output)
-            Por ejemplo: El componente Products, cual posee una lista de Productos, se comunica al componente Product
-            para enviar una interfaz de tipo Product.
-        </p>
-        <p>
-            Se cumplió con el ciclo de vida de un Componente, el constructor para la inyección de dependencias,
-            ngOnChanges para detectar los cambios de los Inputs en los formularios y ngOnInit para el uso de API
-            requests,
-        </p>
+        <mat-card-content>
+            <p>
+                Soy un estudiante de 8to ciclo de la carrera de Ingeniería de Software
+                apasionado por el desarrollo web y móvil, este proyecto
+                ha sido elaborado con fines demostrativos sobre el uso del framework Angular
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a href="https://github.com/Audiomiguel" target="_blank" mat-button>GITHUB
+                REPOSITORY</a>
+            <a href="https://www.linkedin.com/in/miguel-bustillos-alayo-6ab081222/" target="_blank"
+                mat-button>LINKEDIN</a>
+        </mat-card-actions>
+    </mat-card>
 
-        <h2>Lazy Loading</h2>
-        <img src="https://blog-es.mimacom.com/es/media/6ab37fd942cc6479cd7d986ce2325584/lazy_loading_diagram.png" alt=""
-            style="width: 100%;">
-        <p>
-            Reduce el peso de la aplicación principal modularizando los componentes, los cuales serán llamados cada vez
-            que sean necesarios y no cargados desde un principio.
-        </p>
+    <mat-card class="example-card" id="angular-card">
+        <mat-card-title-group>
+            <mat-card-title>Acerca del proyecto</mat-card-title>
+            <mat-card-subtitle>Angular</mat-card-subtitle>
+            <img mat-card-sm-image src="assets/images/angular-icon.png">
+        </mat-card-title-group>
+        <mat-card-content>
+            <p>
+                Se ha utilizado la comunicación entre componentes padre a hijo y viceversa (Input & Output)
+                Por ejemplo: El componente Products, cual posee una lista de Productos, se comunica al componente
+                Product
+                para enviar una interfaz de tipo Product.
+            </p>
+            <p>
+                Se cumplió con el ciclo de vida de un Componente, el constructor para la inyección de dependencias,
+                ngOnChanges para detectar los cambios de los Inputs en los formularios y ngOnInit para el uso de API
+                requests,
+            </p>
 
-    </mat-card-content>
-</mat-card>
+            <h2>Lazy Loading</h2>
+            <img src="https://blog-es.mimacom.com/es/media/6ab37fd942cc6479cd7d986ce2325584/lazy_loading_diagram.png"
+                alt="" style="width: 100%;">
+            <p>
+                Reduce el peso de la aplicación principal modularizando los componentes, los cuales serán llamados cada
+                vez
+                que sean necesarios y no cargados desde un principio.
+            </p>
 
-<mat-card class="example-card">
-    <mat-card-title-group>
-        <mat-card-title>UI,UX, Estilos</mat-card-title>
-        <mat-card-subtitle>Angular Material</mat-card-subtitle>
-        <img mat-card-sm-image src="assets/images/angular-material-icon.png">
-    </mat-card-title-group>
-    <mat-card-content>
-        <p>
-            Se utilizó Angular Material para el uso de Cards, tipografías, componentes ded diseño, formularios, paleta
-            de colores, etc.
-        </p>
-    </mat-card-content>
-    <mat-card-actions>
-        <a href="https://material.angular.io/" target="_blank" mat-button>DOCUMENTATION</a>
-    </mat-card-actions>
-</mat-card>
-<blockquote>
-    <q>"You don't need to be better than anyone else; you just need to be better than you used to be."</q>
-</blockquote>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="example-card" id="estilos-card">
+        <mat-card-title-group>
+            <mat-card-title>UI,UX, Estilos</mat-card-title>
+            <mat-card-subtitle>Angular Material</mat-card-subtitle>
+            <img mat-card-sm-image src="assets/images/angular-material-icon.png">
+        </mat-card-title-group>
+        <mat-card-content>
+            <p>
+                Se utilizó Angular Material para el uso de Cards, tipografías, componentes ded diseño, formularios,
+                paleta
+                de colores, etc.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a href="https://material.angular.io/" target="_blank" mat-button>DOCUMENTATION</a>
+        </mat-card-actions>
+    </mat-card>
+
+
+    <mat-card class="example-card" id="frase-card">
+        <mat-card-content>
+            <q>"You don't need to be better than anyone else; you just need to be better than you used to be."</q>
+
+        </mat-card-content>
+    </mat-card>
+</div>

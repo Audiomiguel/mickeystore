@@ -1,44 +1,63 @@
 <div class="banner">
+
     <h2>Encuentra la ropa perfecta de Mickey Mouse</h2>
-    <img src="https://i1.wp.com/teeqq.sfo2.digitaloceanspaces.com/2019/03/dope-disc-jockey-disney-mickey-hands-mixing-music-shirts-5.png?ssl=1"
-        alt="Mickey clothes banner" class="img-banner">
-    <h4>Eat, drink and wear stylish</h4>
-    <a routerLink="/products" mat-raised-button color="white">
-        <mat-icon>
-            <img src="https://img.icons8.com/material/24/000000/animation--v1.png" />
-        </mat-icon>
-        Ver productos
-    </a>
+
+    <picture>
+        <img src="https://i1.wp.com/teeqq.sfo2.digitaloceanspaces.com/2019/03/dope-disc-jockey-disney-mickey-hands-mixing-music-shirts-5.png?ssl=1"
+            alt="Mickey clothes banner" class="img-banner">
+
+        <img src="https://cdn.shopify.com/s/files/1/1880/5877/products/louis-vuitton-skeleton-mickey-mouse-shirts-t-shirt-gildan-mens-t-shirt-white-s-6.png"
+            alt="Mickey clothes banner" class="img-banner" id="second-shirt">
+    </picture>
+    <div class="call-container">
+        <h4>Eat, drink and wear stylish</h4>
+        <a routerLink="/products" mat-raised-button color="white">
+            <mat-icon>
+                <img src="https://img.icons8.com/material/24/000000/animation--v1.png" />
+            </mat-icon>
+            Ver productos
+        </a>
+    </div>
+
 </div>
 
-<mat-card class="presentation">
-    <mat-card-header>
-        <div mat-card-avatar id="presentation-image"></div>
-        <mat-card-title>Quienes somos</mat-card-title>
-        <mat-card-subtitle>MickeyStore</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-        Somos una startup de venta de ropa con la tematica de
-        Mickey Mouse orientado a jovenes adolescentes que
-        buscan un estilo diferente y callejero.
-    </mat-card-content>
-    <mat-card-actions>
-        <a routerLink="" mat-raised-button color="primary">
-            Conoce acerca del proyecto
-        </a>
-    </mat-card-actions>
-</mat-card>
+<div class="card-container">
 
-<mat-card class="presentation">
-    <mat-card-header>
-        <div mat-card-avatar id="location-image"></div>
-        <mat-card-title>¿Cómo pago y recibo mi pedido?</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        Trabajamos con Rappi para la entrega de pedidos. El pago se
-        realiza a traves de transferencia bancaria BCP y con el número de
-        pedido generado por la tienda virtual.
-    </mat-card-content>
+    <mat-card class="presentation">
+        <mat-card-header>
+            <div mat-card-avatar id="presentation-image"></div>
+            <mat-card-title>Quienes somos</mat-card-title>
+            <mat-card-subtitle>MickeyStore</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            Somos una startup de venta de ropa con la tematica de
+            Mickey Mouse orientado a jovenes adolescentes que
+            buscan un estilo diferente y callejero.
+        </mat-card-content>
+        <mat-card-actions>
+            <a routerLink="/contact" mat-raised-button color="primary">
+                Conoce acerca del proyecto
+            </a>
+        </mat-card-actions>
+    </mat-card>
 
-</mat-card>
+    <mat-card class="presentation">
+        <mat-card-header>
+            <div mat-card-avatar id="location-image"></div>
+            <mat-card-title>¿Cómo pago y recibo mi pedido?</mat-card-title>
+            <mat-card-subtitle>Transferencia Bancaria / Rappi</mat-card-subtitle>
 
+        </mat-card-header>
+        <mat-card-content>
+            Trabajamos con Rappi para la entrega de pedidos. El pago se
+            realiza a traves de transferencia bancaria BCP y con el número de
+            pedido generado por la tienda virtual.
+        </mat-card-content>
+        <mat-card-actions>
+            <a routerLink="/order" mat-raised-button color="primary">
+                Ir al carrito
+            </a>
+        </mat-card-actions>
+
+    </mat-card>
+</div>
